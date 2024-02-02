@@ -1,7 +1,7 @@
 # Sauce Labs Web Automation with Selenium Java
 
 ## Environment Test
-**Website https://saucedemo.com
+**Website https://saucedemo.com**
 
 ## Project Focus
 * Testing e-commerce workflows using Selenium WebDriver with Java as the programming language
@@ -9,7 +9,7 @@
 * Google Chrome is selected as the target browser for testing these scenarios
 
 ## Test Case Documentation
-**https://bit.ly/test-case-sauce-demo
+**https://bit.ly/test-case-sauce-demo**
 
 ## How to run
 1. Clone this repo
