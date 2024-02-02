@@ -1,7 +1,7 @@
 # Sauce Labs Web Automation with Selenium Java
 
 ## Environment Test
-**Website https://saucedemo.com**
+**https://saucedemo.com**
 
 ## Project Focus
 * Testing e-commerce workflows using Selenium WebDriver with Java as the programming language
