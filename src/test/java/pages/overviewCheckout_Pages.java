@@ -57,6 +57,9 @@ public class overviewCheckout_Pages {
         List<Double> productPrices = getProductPrices();
         List<Integer> productQuantities = getProductQuantities();
 
+        System.out.println("Number of price elements: " + productPrices.size());
+        System.out.println("Number of quantity elements: " + productQuantities.size());
+
         for (int i = 0; i < productPrices.size(); i++) {
             double price = productPrices.get(i);
             int quantity = productQuantities.get(i);
@@ -67,13 +70,13 @@ public class overviewCheckout_Pages {
         setTotalPrice(totalPrice);
     }
 
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
     public double getTotalPrice() {
 
         return totalPrice;
-    }
-
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
     }
 
     public void calculateTax() {

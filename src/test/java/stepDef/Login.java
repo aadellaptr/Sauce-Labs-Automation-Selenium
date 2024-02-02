@@ -37,4 +37,13 @@ public class Login extends env_target {
         loginPage.verifyLoginResult();
     }
 
+    @When("User fill invalid username and password")
+    public void userFillInvalidUsernameAndPassword() {
+        loginPage.inputInvalidUserPw("standard_user","invalid_pw");
+    }
+
+    @Then("User get error message")
+    public void userGetErrorMessage() {
+        loginPage.errorLoginMessage();
+    }
 }

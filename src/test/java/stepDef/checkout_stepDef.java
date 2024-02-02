@@ -9,26 +9,26 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import pages.cartPages;
 import pages.overviewCheckout_Pages;
+import pages.productPages;
 
 public class checkout_stepDef extends env_target {
     protected WebDriver driver = getDriver();
 
     cartPages cartPage = new cartPages(driver);
     overviewCheckout_Pages overviewPages = new overviewCheckout_Pages(driver);
+    productPages productPage = new productPages(driver);
 
     @Given("User is on the shopping cart page")
     public void user_is_on_the_cart_page() {
 
-        cartPage.waitForCartPage();
+        productPage.clickCartIcon();
     }
 
 
     @And("Check the total price, tax, and total price + tax of the products")
     public void calculates_the_price_tax() {
         overviewPages.calculateTotalPrice();
-
         overviewPages.calculateTax();
-
         overviewPages.calculateTotalPriceTax();
     }
 
